@@ -1,0 +1,47 @@
+@import "normalize.css";
+
+/* navbar styling */ 
+
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    padding: 1rem;;
+    margin: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-bar a {
+    color: #234459; 
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-bar a:hover {
+    color: white;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-background {
+    background-image: url("../img/apple.glasses.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+}
