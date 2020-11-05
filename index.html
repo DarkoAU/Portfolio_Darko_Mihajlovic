@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="main-background">
     <!-- This is the enitre navbar section-->
     <header class="nav-header">
-        <nav class="nav-bar">
-            <!--Links section-->
-            <a href="index.html">Home</a>
-            <a href="./pages/about.html">About</a>
-            <a href="./pages//experience.html">Experience</a>
-            <a href="./pages//interests.html">Interests</a>
-            <a href="./pages//contact.html">Contact</a>
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-bar" id="nav-bar">   
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages//experience.html">Experience</a></li>
+                <li><a href="./pages//interests.html">Interests</a></li>
+                <li><a href="./pages//contact.html">Contact</a></li>
+            </ul>    
+            <button class="ham-nav" id="ham-nav">
+                <i class="fa fa-bars"></i>
+            </button>
         </nav>
     </header>
+    <script src="./script/script.js"></script>
 </body>
 </html>

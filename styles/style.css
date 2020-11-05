@@ -1,14 +1,34 @@
 @import "normalize.css";
 
 /* navbar styling */ 
-
 .nav-header {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    height: 4vh;
-    padding: 1rem;;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.ham-nav {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: #0B1E26;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ham-nav:focus {
+    outline: none;
 }
 
 .nav-bar {
@@ -16,16 +36,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 0;
+}
+
+.nav-bar li {
+    list-style: none;
 }
 
 .nav-bar a {
-    color: #234459; 
-    font-size: 14px;
+    color: #0B1E26; 
+    font-size: 20px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     display: flex; 
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
     text-decoration: none;
     padding: 1rem;
@@ -44,4 +69,39 @@
     background-attachment: fixed;
     background-size: cover;
     object-fit: cover;
+}
+
+@media screen and (max-width: 780px) {
+
+    
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        width:100%;
+    }
+ 
+    .ham-nav {
+        display: block;     
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .nav-bar.show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10%;
+        z-index: 9999;
+        width: 40%; 
+        background-color: #F2F0F0;
+        opacity: 60%; 
+    }
+
+    .nav-bar a {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
