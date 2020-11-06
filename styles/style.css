@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.logo {
+    display: block;
+    width: 5%;
+    height: 5%;
+    float: left; 
+}
 
 nav {
     display: flex;
@@ -22,7 +28,7 @@ nav {
     display: none;
     background-color: transparent;
     border: 0;
-    color: #0B1E26;
+    color: #1F3C40;
     font-size: 20px;
     cursor: pointer;
 }
@@ -71,6 +77,33 @@ nav {
     object-fit: cover;
 }
 
+.pages-header {
+    background-color: #D9D7D7;
+    height: 8vh;
+}
+
+.pages-main {
+    display: grid;
+    background-color: #1F3C40;
+
+}
+
+.pages-footer {
+    background-color:#F2F0F0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    left: 0;
+    bottom: 0;
+}
+#about-h1 {
+    color: #D9D7D7;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
 @media screen and (max-width: 780px) {
 
     
@@ -93,15 +126,22 @@ nav {
         flex-wrap: wrap;
         border-radius: 10%;
         z-index: 9999;
-        width: 40%; 
+        width: 45%; 
         background-color: #F2F0F0;
         opacity: 60%; 
     }
+
+    .nav-bar a {
+        font-size: 18px;
+        justify-content: center;
+        text-align: center;
+    }
+
+}@media screen and (max-width: 500px) {
 
     .nav-bar a {
         font-size: 12px;
         justify-content: center;
         text-align: center;
     }
-
 }
