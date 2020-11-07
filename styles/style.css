@@ -54,7 +54,7 @@ nav {
 
 .nav-bar a {
     color: #F2F0F0; 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     display: flex; 
@@ -78,7 +78,17 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     object-fit: cover;
+    margin-bottom: 4vh;
+}
 
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30vh;
+    color: #C1BDBE;
 }
 
 .pages-header {
@@ -161,7 +171,7 @@ nav {
 
 #my-img {
     width: 380px;
-    filter: grayscale(30%);
+    filter: grayscale(50%);
    
 }
 
@@ -169,6 +179,8 @@ nav {
     color: #D9D7D7;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #D9D7D7;
+    padding: 2rem;
 }
 
 .blog-wrapper {
@@ -179,18 +191,110 @@ nav {
     margin-bottom: 5%;
 }
 
+.blog-wrapper a {
+    text-decoration: none;
+}
+
+.blog-wrapper a:visited {
+    text-decoration: none;
+}
+
 .blog-emb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 300px;
     background-color: white;
     margin: 1rem;
     background-color: rgb(68,79,87,0.6) ;
+    padding: 1rem;
 }
 
-.blg-img {
-    width: auto;
-    height: auto;
+.blog-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-img {
+    width: 200px;
+    height: 200px;
     background-color: white;
+    filter: grayscale(50%);
+}
+
+.blog-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 200px;
+    margin-top: 0.5rem;  
+    text-decoration: none;
+    color:  #F2F0F0;;
+    padding: 1rem;
+}
+
+.expereince-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:  rgb(68,79,87,0.9);
+    width: 80%;
+    padding: 2rem;
+}
+
+.project-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    background-image: url();
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    background-color: #F2F0F0;
+    margin: 2rem;
+
+}
+
+.languages-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color:  rgb(68,79,87,0.9);
+    width: 80%;
+    padding: 2rem;
+}
+
+.lang-ind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:  #F2F0F0;
+}
+
+
+.languages-icon {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 
 }
 
@@ -228,7 +332,6 @@ nav {
     margin: auto;
     opacity: 95%;
     padding: 2rem;
-    z-index: -1;
 }
 
 #name {
@@ -287,6 +390,7 @@ nav {
 
     .contact-wrapper {
         flex-direction: column-reverse;
+        z-index: -1;
     }
 
     .medium-map {
@@ -296,7 +400,7 @@ nav {
 
     .small-map {
         display: block;
-        z-index: inherit;
+        z-index: -1;
     }
 
 }@media screen and (max-width: 500px) {
