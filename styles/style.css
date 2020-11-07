@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #444F57;
+    height: 8vh;
     opacity: 95%;
 }
 
@@ -288,13 +289,17 @@ nav {
 .lang-ind {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     color:  #F2F0F0;
 }
 
+.lang-desc{
+    display: block;
+    justify-content: space-evenly;
+}
 
 .languages-icon {
-    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
 
 }
 
