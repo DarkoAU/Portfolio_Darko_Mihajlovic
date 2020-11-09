@@ -1,6 +1,7 @@
 @import "normalize.css";
 
 /* navbar styling */ 
+
 .nav-header {
     display: flex;
     flex-wrap: wrap;
@@ -11,17 +12,24 @@
     opacity: 95%;
 }
 
-.logo {
-    display: block;
-    width: 5%;
-    height: 5%;
-    float: left; 
+.logo-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 30px;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
@@ -137,6 +145,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 73vh;
+  
 }
 
 .about-wrapper {
@@ -144,12 +153,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #444F57;
-    width: 70%;
+    background-color: rgb(68,79,87,0.6) ;
+    width: 60%;
     margin: auto;
-    opacity: 95%;
     padding: 2rem;
     z-index: -1;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px black;
 }
 
 .img {
@@ -166,12 +176,12 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 40%;
+    width: 50%;
 
 }
 
 #my-img {
-    width: 380px;
+    width: 80%;
     filter: grayscale(50%);
    
 }
@@ -181,7 +191,7 @@ nav {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     border: 1px solid #D9D7D7;
-    padding: 2rem;
+    padding: 0.4rem;
 }
 
 .blog-wrapper {
@@ -201,7 +211,7 @@ nav {
 }
 
 .blog-emb {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -211,6 +221,8 @@ nav {
     margin: 1rem;
     background-color: rgb(68,79,87,0.6) ;
     padding: 1rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 2%;
 }
 
 .blog-img-div {
@@ -252,9 +264,11 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color:  rgb(68,79,87,0.9);
+    background-color:  rgb(68,79,87,0.6);
+    box-shadow: 5px 5px 10px black;
     width: 80%;
     padding: 2rem;
+    border-radius: 1%;
 }
 
 .project-div {
@@ -270,6 +284,7 @@ nav {
     object-fit: cover;
     background-color: #F2F0F0;
     margin: 2rem;
+    border-radius: 2%;
 
 }
 
@@ -281,9 +296,11 @@ nav {
     width: 100%;
     margin-top: 3%;
     margin-bottom: 3%;
-    background-color:  rgb(68,79,87,0.9);
+    background-color:  rgb(68,79,87,0.6);
+    box-shadow: 5px 5px 10px black;
     width: 80%;
     padding: 2rem;
+    border-radius: 2%;
 }
 
 .lang-ind {
@@ -303,12 +320,18 @@ nav {
 
 }
 
+.pages {
+    z-index: -1;
+}
+
 .ctc-div {
     width: 40%;
     height: auto;
+    z-index: -1;
 }
 
 .medium-map {
+    width: 50%;
     z-index: -1;
     filter: grayscale(50%);
 }
@@ -316,6 +339,7 @@ nav {
 .small-map {
     display: none;
     filter: grayscale(50%);
+    z-index: -1;
 }
 
 .contact-form {
@@ -325,6 +349,7 @@ nav {
     align-items: flex-start;
     flex-wrap: wrap;
     color: #D9D7D7;
+    z-index: -1;
 }
 
 .contact-wrapper {
@@ -332,11 +357,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #444F57;
+    background-color:  rgb(68,79,87,0.6);
+    box-shadow: 5px 5px 10px black;
     width: 70%;
     margin: auto;
     opacity: 95%;
     padding: 2rem;
+    border-radius: 1%;
+    z-index: -1;
 }
 
 #name {
@@ -370,6 +398,13 @@ nav {
         padding-right: 0.5rem;
     }
 
+    .logo-social-icons {
+        filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        width: 25px;
+    }
+
     .nav-bar.show {
         display: flex;
         justify-content: flex-start;
@@ -390,7 +425,7 @@ nav {
     }
 
     #my-img {
-        width: 300px;
+        width: 200px;
     }
 
     .contact-wrapper {
@@ -414,10 +449,18 @@ nav {
         font-size: 12px;
         justify-content: center;
         text-align: center;
+        z-index: 9999;
+    }
+
+    .logo-social-icons {
+        filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        width: 20px;
     }
     
     #my-img {
-        width: 200px;
+        width: 150px;
     }
     
     .about-me {
@@ -430,8 +473,45 @@ nav {
         font-family: 'Ubuntu', sans-serif;
     }
 
+    .pages { 
+        z-index: -1;
+    }
+
     .small-map {
         display: none;
-        z-index: inherit;
+       
+    }
+
+    .project-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color:  rgb(68,79,87,0.6);
+        box-shadow: 5px 5px 10px black;
+        width: 70%;
+        padding: 2rem;
+        border-radius: 1%;
+    }
+    
+    .languages-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color:  rgb(68,79,87,0.6);
+        box-shadow: 5px 5px 10px black;
+        width: 70%;
+        padding: 2rem;
+        border-radius: 2%;
+        font-size: 8px;
+    }
+
+    .languages-icon {
+        filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+        width: 25px;
     }
 }
