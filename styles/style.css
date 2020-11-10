@@ -212,43 +212,92 @@ nav {
 
 .blog-emb {
     display: block;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 300px;
     background-color: white;
-    margin: 1rem;
     background-color: rgb(68,79,87,0.6) ;
-    padding: 1rem;
+    margin: 1rem;
+    padding-top: 2rem;
     box-shadow: 5px 5px 10px black;
     border-radius: 2%;
 }
 
 .blog-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    color: #D9D7D7;
 }
 
 .blog-img {
-    width: 200px;
+    width: 250px;
     height: 200px;
+    overflow: hidden;
     background-color: white;
     filter: grayscale(50%);
+    border: 1px solid #D9D7D7;
 }
 
 .blog-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
     width: 280px;
     height: 200px;
-    margin-top: 0.5rem;  
     text-decoration: none;
     color:  #F2F0F0;;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    overflow: hidden;
+    margin: 2%;
+}
+
+.more-button {
+    display: block;
+    position: relative;
+    padding: 5%;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(68,79,87,0.6) ;
+    color: #F2F0F0;
+    width: 60%;
+    margin-top: 10vh;
+    padding: 2rem;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.blog-imag-div {
+    display: block;
+    box-shadow: 5px 5px 10px black;
+}
+
+.blog-image {
+    width: 100%;
+    border: 2px solid #D9D7D7;
+    filter: grayscale(20%);
+}
+
+.back-button {
+    cursor: pointer;
+    background-color: #D9D7D7;
+    border: 1px solid black;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #444F57;
+    
+}
+
+.back-button a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .expereince-main {
@@ -381,6 +430,12 @@ nav {
 
 #message {
     width: 100%;
+}
+
+.blog-page {
+    display: flex;
+    flex: row;
+    justify-content: center;
 }
 
 @media screen and (max-width: 780px) {
