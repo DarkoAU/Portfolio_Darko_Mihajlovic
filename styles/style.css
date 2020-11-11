@@ -2,11 +2,7 @@
 
 /* navbar styling */ 
 
-.nav-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.pages-header {
     background-color: #444F57;
     height: 8vh;
     opacity: 95%;
@@ -18,7 +14,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .logo-social-icons {
     filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
     padding-top: 1.5rem;
@@ -92,19 +87,15 @@ nav {
 
 .hero {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
+    height: auto;
     margin-top: 30vh;
     color: #C1BDBE;
 }
 
-.pages-header {
-    background-color: #444F57;
-    height: 8vh;
-    opacity: 95%;
-}
+
 
 /** not to be used at this stage
 
@@ -144,40 +135,38 @@ nav {
 .about-main {
     display: flex;
     flex-direction: column;
-    height: 73vh;
-  
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
 }
 
 .about-wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: rgb(68,79,87,0.6) ;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    padding: 2rem;
-    z-index: -1;
     border-radius: 1%;
     box-shadow: 5px 5px 10px black;
+    padding: 1rem;
+    z-index: -1;
 }
 
 .img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
+    display: block;
+    position: relative;
+    width: 50%;
+   
 }
 
 .about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: block;
+    position: relative;
     width: 50%;
-
 }
 
 #my-img {
@@ -197,7 +186,8 @@ nav {
 .blog-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 80%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -212,7 +202,6 @@ nav {
 
 .blog-emb {
     display: block;
-    align-items: center;
     background-color: white;
     background-color: rgb(68,79,87,0.6) ;
     margin: 1rem;
@@ -306,6 +295,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: auto;
 }
 
 .project-section {
@@ -318,23 +308,37 @@ nav {
     width: 80%;
     padding: 2rem;
     border-radius: 1%;
+    z-index: -1;
 }
 
 .project-div {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     width: 400px;
     height: 300px;
-    background-image: url();
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    object-fit: cover;
-    background-color: #F2F0F0;
-    margin: 2rem;
+    background-color: rgb(68,79,87);
+    margin: 1rem;
+    border: 2px solid #D9D7D7;
     border-radius: 2%;
+    text-decoration: none;
+}
 
+.project-div a {
+    text-decoration: none;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.project-div h3 {
+    margin-top: 0;
+    text-decoration: none;
+    padding-left: 40%;
+    color: #F2F0F0;
 }
 
 .languages-div {
@@ -369,26 +373,19 @@ nav {
 
 }
 
-.pages {
-    z-index: -1;
-}
-
 .ctc-div {
     width: 40%;
     height: auto;
-    z-index: -1;
 }
 
 .medium-map {
     width: 50%;
-    z-index: -1;
     filter: grayscale(50%);
 }
 
 .small-map {
     display: none;
     filter: grayscale(50%);
-    z-index: -1;
 }
 
 .contact-form {
@@ -398,7 +395,6 @@ nav {
     align-items: flex-start;
     flex-wrap: wrap;
     color: #D9D7D7;
-    z-index: -1;
 }
 
 .contact-wrapper {
@@ -413,7 +409,6 @@ nav {
     opacity: 95%;
     padding: 2rem;
     border-radius: 1%;
-    z-index: -1;
 }
 
 #name {
@@ -449,7 +444,7 @@ nav {
  
     .ham-nav {
         display: block;     
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-right: 0.5rem;
     }
 
@@ -485,7 +480,11 @@ nav {
 
     .contact-wrapper {
         flex-direction: column-reverse;
-        z-index: -1;
+    }
+
+    .ctc-div {
+        width: 90%;
+        height: auto;
     }
 
     .medium-map {
@@ -495,10 +494,9 @@ nav {
 
     .small-map {
         display: block;
-        z-index: -1;
     }
 
-}@media screen and (max-width: 500px) {
+}@media screen and (max-width: 545px) {
 
     .nav-bar a {
         font-size: 12px;
@@ -526,10 +524,6 @@ nav {
         color: #D9D7D7;
         font-size: 12px;
         font-family: 'Ubuntu', sans-serif;
-    }
-
-    .pages { 
-        z-index: -1;
     }
 
     .small-map {
