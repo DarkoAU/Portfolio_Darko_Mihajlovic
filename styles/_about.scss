@@ -1,5 +1,5 @@
 #about-h1 {
-    color: #737273;
+    color: $title-color;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: rgb(68,79,87,0.6) ;
+    background-color: $div-color;
     width: 80%;
     margin: auto;
     border-radius: 1%;
@@ -47,10 +47,10 @@
 }
 
 #about-me {
-    color: #D9D7D7;
+    color: $text-color;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    border: 1px solid #D9D7D7;
+    border: 1px solid $text-color;
     padding: 0.4rem;
 }
 
@@ -73,8 +73,7 @@
 
 .blog-emb {
     display: block;
-    background-color: white;
-    background-color: rgb(68,79,87,0.6) ;
+    background-color: $div-color;
     margin: 1rem;
     padding-top: 2rem;
     box-shadow: 5px 5px 10px black;
@@ -87,7 +86,7 @@
     width: 80%;
     margin-left: 10%;
     text-decoration: none;
-    color: #D9D7D7;
+    color: $text-color;
 }
 
 .blog-img {
@@ -96,7 +95,7 @@
     overflow: hidden;
     background-color: white;
     filter: grayscale(50%);
-    border: 1px solid #D9D7D7;
+    border: 1px solid $text-color;
 }
 
 .blog-caption {
@@ -104,7 +103,7 @@
     width: 280px;
     height: 200px;
     text-decoration: none;
-    color:  #F2F0F0;;
+    color: $text-color;;
     padding-left: 1rem;
     padding-right: 1.5rem;
     overflow: hidden;
@@ -123,8 +122,8 @@
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: rgb(68,79,87,0.6) ;
-    color: #F2F0F0;
+    background-color: $div-color;
+    color: $text-color;
     width: 60%;
     margin-top: 10vh;
     padding: 2rem;
@@ -139,23 +138,105 @@
 
 .blog-image {
     width: 100%;
-    border: 2px solid #D9D7D7;
+    border: 2px solid $text-color;
     filter: grayscale(20%);
 }
 
 .back-button {
     cursor: pointer;
-    background-color: #D9D7D7;
+    background-color: $text-color;
     border: 1px solid black;
 }
 
 .back-button a {
     text-decoration: none;
-    color: #444F57;
+    color: $nav-color;
+    cursor: pointer;
     
 }
 
 .back-button a:visited {
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (max-width: 780px) {
+    
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        width:100%;
+    }
+ 
+    .ham-nav {
+        display: block;     
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+        z-index: 20;
+    }
+
+    .logo-social-icons {
+        filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        width: 25px;
+    }
+
+    .nav-bar.show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        border-radius: 10%;
+        z-index: 20;
+        width: 45%; 
+        background-color: #F2F0F0;
+        opacity: 90%; 
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+        color: #444F57;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    #my-img {
+        width: 200px;
+    }
+
+}
+@media screen and (max-width: 545px) {
+    
+    .nav-bar a {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+        z-index: 20;
+    }
+
+    .logo-social-icons {
+        filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        width: 20px;
+    }
+    
+    #my-img {
+        width: 150px;
+    }
+    
+    .about-me {
+        width: 80%
+    }
+
+    #about-me {
+        color: #D9D7D7;
+        font-size: 12px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    
 }

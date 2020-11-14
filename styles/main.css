@@ -49,7 +49,7 @@ nav {
   display: none;
   background-color: transparent;
   border: 0;
-  color: #D9D7D7;
+  color: #F2F0F0;
   font-size: 20px;
   cursor: pointer;
 }
@@ -152,6 +152,73 @@ nav {
   bottom: 0;
 }
 
+@media screen and (max-width: 780px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ham-nav {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 25px;
+  }
+
+  .nav-bar.show {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    z-index: 20;
+    width: 45%;
+    background-color: #F2F0F0;
+    opacity: 90%;
+  }
+
+  .nav-bar a {
+    font-size: 18px;
+    color: #444F57;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 30vh;
+    color: #8c9297;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .nav-bar a {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 20px;
+  }
+}
 #about-h1 {
   color: #737273;
   font-family: "Ubuntu", sans-serif;
@@ -199,10 +266,10 @@ nav {
 }
 
 #about-me {
-  color: #D9D7D7;
+  color: #F2F0F0;
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
-  border: 1px solid #D9D7D7;
+  border: 1px solid #F2F0F0;
   padding: 0.4rem;
 }
 
@@ -225,7 +292,6 @@ nav {
 
 .blog-emb {
   display: block;
-  background-color: white;
   background-color: rgba(68, 79, 87, 0.6);
   margin: 1rem;
   padding-top: 2rem;
@@ -239,7 +305,7 @@ nav {
   width: 80%;
   margin-left: 10%;
   text-decoration: none;
-  color: #D9D7D7;
+  color: #F2F0F0;
 }
 
 .blog-img {
@@ -248,7 +314,7 @@ nav {
   overflow: hidden;
   background-color: white;
   filter: grayscale(50%);
-  border: 1px solid #D9D7D7;
+  border: 1px solid #F2F0F0;
 }
 
 .blog-caption {
@@ -291,19 +357,20 @@ nav {
 
 .blog-image {
   width: 100%;
-  border: 2px solid #D9D7D7;
+  border: 2px solid #F2F0F0;
   filter: grayscale(20%);
 }
 
 .back-button {
   cursor: pointer;
-  background-color: #D9D7D7;
+  background-color: #F2F0F0;
   border: 1px solid black;
 }
 
 .back-button a {
   text-decoration: none;
   color: #444F57;
+  cursor: pointer;
 }
 
 .back-button a:visited {
@@ -311,6 +378,80 @@ nav {
   color: inherit;
 }
 
+@media screen and (max-width: 780px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ham-nav {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 25px;
+  }
+
+  .nav-bar.show {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    z-index: 20;
+    width: 45%;
+    background-color: #F2F0F0;
+    opacity: 90%;
+  }
+
+  .nav-bar a {
+    font-size: 18px;
+    color: #444F57;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #my-img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .nav-bar a {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 20px;
+  }
+
+  #my-img {
+    width: 150px;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  #about-me {
+    color: #D9D7D7;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+  }
+}
 .expereince-main {
   display: flex;
   flex-direction: column;
@@ -339,7 +480,7 @@ nav {
   height: 300px;
   background-color: #444f57;
   margin: 1rem;
-  border: 2px solid #D9D7D7;
+  border: 2px solid #F2F0F0;
   border-radius: 2%;
   text-decoration: none;
 }
@@ -407,6 +548,95 @@ nav {
   text-decoration: none;
 }
 
+@media screen and (max-width: 780px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ham-nav {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 25px;
+  }
+
+  .nav-bar.show {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    z-index: 20;
+    width: 45%;
+    background-color: #F2F0F0;
+    opacity: 90%;
+  }
+
+  .nav-bar a {
+    font-size: 18px;
+    color: #444F57;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 545px) {
+  .nav-bar a {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    z-index: 20;
+  }
+
+  .logo-social-icons {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 20px;
+  }
+
+  .project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(68, 79, 87, 0.6);
+    box-shadow: 5px 5px 10px black;
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 1%;
+  }
+
+  .languages-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(68, 79, 87, 0.6);
+    box-shadow: 5px 5px 10px black;
+    width: 70%;
+    padding: 2rem;
+    border-radius: 2%;
+    font-size: 8px;
+  }
+
+  .languages-icon {
+    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
+    width: 25px;
+  }
+}
 .ctc-div {
   width: 40%;
   height: auto;
@@ -428,7 +658,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  color: #D9D7D7;
+  color: #F2F0F0;
 }
 
 .contact-wrapper {
@@ -448,19 +678,7 @@ nav {
   z-index: 0;
 }
 
-#name {
-  width: 100%;
-}
-
-#email {
-  width: 100%;
-}
-
-#subject {
-  width: 100%;
-}
-
-#message {
+#name, #email, #subject, #message {
   width: 100%;
 }
 
@@ -511,21 +729,6 @@ nav {
     text-align: center;
   }
 
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    margin-top: 30vh;
-    color: #8c9297;
-    font-size: 20px;
-  }
-
-  #my-img {
-    width: 200px;
-  }
-
   .contact-wrapper {
     flex-direction: column-reverse;
   }
@@ -558,55 +761,8 @@ nav {
     width: 20px;
   }
 
-  #my-img {
-    width: 150px;
-  }
-
-  .about-me {
-    width: 80%;
-  }
-
-  #about-me {
-    color: #D9D7D7;
-    font-size: 12px;
-    font-family: "Ubuntu", sans-serif;
-  }
-
   .small-map {
     display: none;
-  }
-
-  .project-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgba(68, 79, 87, 0.6);
-    box-shadow: 5px 5px 10px black;
-    width: 70%;
-    padding: 2rem;
-    border-radius: 1%;
-  }
-
-  .languages-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    background-color: rgba(68, 79, 87, 0.6);
-    box-shadow: 5px 5px 10px black;
-    width: 70%;
-    padding: 2rem;
-    border-radius: 2%;
-    font-size: 8px;
-  }
-
-  .languages-icon {
-    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
-    width: 25px;
   }
 }
 
