@@ -181,8 +181,11 @@
 
 .back-button a {
     text-decoration: none;
-    color: $nav-color;
+    color: $text-color;
     cursor: pointer;
+}
+.back-button a:hover {
+    color: $nav-color;
 }
 
 .back-button:hover {
