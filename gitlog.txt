@@ -1,0 +1,121 @@
+commit 0620115f37babb9962b6758100e106f4fcdf0185
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 15 01:58:53 2020 +1100
+
+    addedd subresource integrity for main.css and script.js
+
+commit 9c9d7f94111840802b70b0c51840f5313486acd2
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 15 01:33:14 2020 +1100
+
+    fixed styling issues with resume button
+
+commit 3ae8b1aa03fbc021cabcfcb4c09ef4b04675af74
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 15 01:25:59 2020 +1100
+
+    added references to all sourced images
+
+commit fe21fff2fcd35b14167f1872eafcd5e818731932
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 15 00:35:29 2020 +1100
+
+    made final styiling changes to buttons, div margins, paddings, added brief text about myself
+
+commit ce64c7c9ef377c0b78b6401a8fac9768fe63b9a0
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 14 14:08:05 2020 +1100
+
+    assigned media queries to each partial instead of having a separate partial for queries, and removed this partial from main.scss
+
+commit 5c5c5afdac82fc216dfb5cf0092088ab436302fc
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 14 11:57:29 2020 +1100
+
+    refmoved from css to scss, created partials for each page, created main.scss stylesheet and linked all pages to this stylesheet. Added animations to the main page
+
+commit db1bd62a3bc4ba976ad9e1a503d41e048db3381d
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Thu Nov 12 01:25:36 2020 +1100
+
+    added project pages and placeholders, improved responsiveness, changed displays in about divs
+
+commit 0efe81e910b9665db4d2d984f1f30b6a7d35f22f
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Wed Nov 11 00:06:24 2020 +1100
+
+    Created blog pages, styled them and linked them to the about page
+
+commit 9aad84045e18e920d9285c255a3586228a72e472
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Tue Nov 10 00:06:09 2020 +1100
+
+    added shadows and radius to divs, added social network icons and linked them to the repsective pages, changed opacity in main divs
+
+commit 95c0240acf0a4296b1f9955efe714747ce840c4b
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 7 19:22:48 2020 +1100
+
+    added langauge icons to the experience.html page and changed their color
+
+commit 147b727d50c617c17517e114e45549de56a95dd3
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 7 16:58:46 2020 +1100
+
+    added blog divs to about page, added project divs to experience page
+
+commit 9e9efafa6c1284a3e1a99dc794c9c56447e97436
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 7 12:30:17 2020 +1100
+
+    previous commit was done from page directory, adding furthe commits to style.css and index.html
+
+commit 62aeaf58fda373ebbe7898214e313250550eee8f
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sat Nov 7 12:29:01 2020 +1100
+
+    deleted interests page and decided to combine interests, blogs and about me on the one page - about.html
+
+commit 6d062ab36be2be6b87ff3082384bc4ef9f87933e
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Fri Nov 6 17:15:47 2020 +1100
+
+    Changed page background to match index page and changed the styling of navbar / footer
+
+commit af024bced9e06858cf15dda940a8c14cd3f57d99
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Fri Nov 6 15:15:41 2020 +1100
+
+    added content to the about page, styled it and made it repsonsive
+
+commit 42c4c10e908d7221b77307f799a2015ed138f2f2
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Fri Nov 6 11:30:17 2020 +1100
+
+    created all pages and linked them
+
+commit 441959bd75c016a36d2f80967e8bbb6f04da3eaa
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Thu Nov 5 11:00:37 2020 +1100
+
+    added and styled hamburger navbar and made it responsive. Add .js file for hamburger navbar
+
+commit 69b0d23f77cb1d2242da2c6f6eb789c800c9e40c
+Merge: baaa3e2 c4a9f0e
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 1 13:15:52 2020 +1100
+
+    merge branch 'main' of https://github.com/DarkoAU/Portfolio_Darko_Mihajlovic into main
+    git commit -m "branch conflict possibly due to the readme.md file causing unrleated branches. Merging branches to crate clean file"
+
+commit baaa3e29ccb417b6e76fb81b89332889815d49e7
+Author: YOUR_USERNAMEDarkoAU <GCAM022011@coderacademy.edu.au>
+Date:   Sun Nov 1 12:43:25 2020 +1100
+
+    created initial index.html with nav bar and styled the nav bar
+
+commit c4a9f0ec4c79e213e0afce9c244132aaacf86759
+Author: Darko Mihajlovic <66908757+DarkoAU@users.noreply.github.com>
+Date:   Sat Oct 31 11:57:40 2020 +1100
+
+    Initial commit
