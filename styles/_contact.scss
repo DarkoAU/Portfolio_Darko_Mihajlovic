@@ -1,0 +1,62 @@
+.ctc-div {
+    width: 40%;
+    height: auto;
+}
+
+.medium-map {
+    width: 50%;
+    filter: grayscale(50%);
+}
+
+.small-map {
+    display: none;
+    filter: grayscale(50%);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #D9D7D7;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color:  rgb(68,79,87,0.6);
+    box-shadow: 5px 5px 10px black;
+    width: 60%;
+    margin: auto; 
+    margin-top: 10vh;
+    opacity: 95%;
+    padding: 2rem;
+    border-radius: 1%;
+    z-index: 0;
+}
+
+#name {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#subject {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+}
+
+.blog-page {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
