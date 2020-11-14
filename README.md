@@ -1,6 +1,7 @@
 # Portfolio_Darko_Mihajlovic
 
 Link to the deployed [portfolio site](https://darko-mihajlovic.netlify.app/index.html)
+
 Link to the [GitHub Repository](https://github.com/DarkoAU/Portfolio_Darko_Mihajlovic)
 
 ## Description 
@@ -41,26 +42,26 @@ This website consists of 4 main pages and 5 subpages.
 
   * All pages are fully responsive 
 
-  ## Sitemap
+## Sitemap
 
-  [](./docs/sitemap.png)
+![Site Map](./docs/sitemap.png)
 
 ## Screenshots
 
 Home Page
 
-[](./docs/homepage.png)
+![Home Page](./docs/homepage.png)
 
 About Me Page
 
-[](./docs/aboutme.png)
+![About Me Page](./docs/aboutme.png)
 
 Experience Page
 
-[](./docs/experience.png)
+![Experience Page](./docs/experience.png)
 
 Contact Page
-[](./docs/contact.png)
+![Contact Page](./docs/contact.png)
 
 ## Target audience
 
