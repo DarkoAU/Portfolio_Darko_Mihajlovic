@@ -24,7 +24,7 @@
 .logo-social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   animation: fade-in;
   animation-duration: 2s;
@@ -50,7 +50,7 @@ nav {
   background-color: transparent;
   border: 0;
   color: #F2F0F0;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -77,7 +77,7 @@ nav {
   color: #F2F0F0;
   font-size: 18px;
   font-weight: 900;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,9 +87,9 @@ nav {
 }
 
 .nav-bar a:hover {
-  color: white;
+  color: #8c9297;
   transition: 0.5s;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-background {
@@ -111,6 +111,7 @@ nav {
   width: auto;
   height: auto;
   margin-top: 30vh;
+  font-family: "Roboto", sans-serif;
   color: #8c9297;
   font-size: 40px;
   text-shadow: 1px 1px black;
@@ -152,7 +153,7 @@ nav {
   bottom: 0;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .nav-bar {
     display: none;
     flex-direction: column;
@@ -161,6 +162,7 @@ nav {
 
   .ham-nav {
     display: block;
+    float: right;
     padding-top: 1rem;
     padding-right: 0.5rem;
     z-index: 20;
@@ -194,14 +196,7 @@ nav {
   }
 
   .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    margin-top: 30vh;
-    color: #8c9297;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 545px) {
@@ -214,14 +209,18 @@ nav {
 
   .logo-social-icons {
     filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
     width: 20px;
+    padding: 0;
+  }
+
+  .hero {
+    font-size: 20px;
   }
 }
 #about-h1 {
   color: #737273;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .about-main {
@@ -230,39 +229,53 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
+  margin-top: 10vh;
 }
 
 .about-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-color: rgba(68, 79, 87, 0.6);
-  width: 80%;
-  margin: auto;
   border-radius: 1%;
   box-shadow: 5px 5px 10px black;
   padding: 1rem;
-  z-index: -1;
 }
 
 .img {
   display: block;
-  position: relative;
-  width: 50%;
+  margin: auto;
+  padding: 2vh;
 }
 
 .about-me {
-  display: block;
-  position: relative;
-  width: 50%;
+  display: inline-block;
+  width: 50vw;
+  margin: auto;
+  padding: 2vh;
+}
+.about-me p {
+  color: #F2F0F0;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.about-me a {
+  display: inline;
+  padding: 0;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: black;
 }
 
 #my-img {
-  width: 80%;
   filter: grayscale(50%);
+  border-radius: 2%;
 }
 
 #about-me {
@@ -297,6 +310,7 @@ nav {
   padding-top: 2rem;
   box-shadow: 5px 5px 10px black;
   border-radius: 2%;
+  font-family: "Lato", sans-serif;
 }
 
 .blog-img-div {
@@ -323,6 +337,8 @@ nav {
   height: 200px;
   text-decoration: none;
   color: #F2F0F0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   padding-left: 1rem;
   padding-right: 1.5rem;
   overflow: hidden;
@@ -335,6 +351,10 @@ nav {
   padding: 5%;
 }
 
+.blog-page {
+  margin-top: 2vh;
+}
+
 .blog {
   display: flex;
   flex-direction: column;
@@ -343,11 +363,17 @@ nav {
   flex-wrap: wrap;
   background-color: rgba(68, 79, 87, 0.6);
   color: #F2F0F0;
+  font-family: "Lato", sans-serif;
   width: 60%;
-  margin-top: 10vh;
+  margin-top: 1vh;
+  margin: auto;
   padding: 2rem;
   border-radius: 1%;
   box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
 }
 
 .blog-imag-div {
@@ -363,8 +389,11 @@ nav {
 
 .back-button {
   cursor: pointer;
-  background-color: #F2F0F0;
+  background-color: #444F57;
+  color: #F2F0F0;
+  font-family: "Lato", sans-serif;
   border: 1px solid black;
+  transition-duration: 0.7s;
 }
 
 .back-button a {
@@ -373,64 +402,47 @@ nav {
   cursor: pointer;
 }
 
+.back-button:hover {
+  background-color: #F2F0F0;
+  color: #444F57;
+}
+
 .back-button a:visited {
   text-decoration: none;
   color: inherit;
 }
 
 @media screen and (max-width: 780px) {
-  .nav-bar {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .ham-nav {
-    display: block;
-    padding-top: 1rem;
-    padding-right: 0.5rem;
-    z-index: 20;
-  }
-
-  .logo-social-icons {
-    filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
-    width: 25px;
-  }
-
-  .nav-bar.show {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    border-radius: 10%;
-    z-index: 20;
-    width: 45%;
-    background-color: #F2F0F0;
-    opacity: 90%;
-  }
-
-  .nav-bar a {
-    font-size: 18px;
-    color: #444F57;
-    justify-content: center;
-    text-align: center;
-  }
-
   #my-img {
     width: 200px;
   }
-}
-@media screen and (max-width: 545px) {
-  .nav-bar a {
-    font-size: 12px;
-    justify-content: center;
-    text-align: center;
-    z-index: 20;
+
+  .img {
+    display: block;
+    margin: auto;
+    padding: 0.5vh;
   }
 
+  .about-me {
+    display: block;
+    width: 80vw;
+    margin: auto;
+    padding: 0.5vh;
+  }
+  .about-me p {
+    color: #F2F0F0;
+    font-size: 16px;
+    margin: 0;
+  }
+  .about-me a {
+    display: inline;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: black;
+  }
+}
+@media screen and (max-width: 545px) {
   .logo-social-icons {
     filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
     padding-top: 1.5rem;
@@ -438,18 +450,23 @@ nav {
     width: 20px;
   }
 
-  #my-img {
-    width: 150px;
-  }
-
   .about-me {
-    width: 80%;
+    display: block;
+    position: relative;
+    width: 80vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 0.5vh;
   }
-
-  #about-me {
-    color: #D9D7D7;
-    font-size: 12px;
-    font-family: "Ubuntu", sans-serif;
+  .about-me p {
+    color: #F2F0F0;
+    font-size: 14px;
+    margin: 0;
+  }
+  .about-me a {
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    color: black;
   }
 }
 .expereince-main {
@@ -471,7 +488,6 @@ nav {
   width: 80%;
   padding: 2rem;
   border-radius: 1%;
-  z-index: -1;
 }
 
 .project-div {
@@ -485,8 +501,9 @@ nav {
   text-decoration: none;
 }
 
-.project-div a {
+a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .project-img {
@@ -500,8 +517,9 @@ nav {
 .project-div h3 {
   margin-top: 0;
   text-decoration: none;
-  padding-left: 40%;
+  font-family: "Lato", sans-serif;
   color: #F2F0F0;
+  text-align: center;
 }
 
 .languages-div {
@@ -533,14 +551,6 @@ nav {
 
 .languages-icon {
   filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
-}
-
-#cv {
-  background-color: rgba(68, 79, 87, 0.6);
-  text-decoration: none;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  border-radius: 10%;
 }
 
 #cv a {
@@ -636,6 +646,25 @@ nav {
     filter: invert(100%) sepia(34%) saturate(81%) hue-rotate(200deg) brightness(114%) contrast(89%);
     width: 25px;
   }
+
+  .project-div {
+    display: block;
+    width: 400px;
+    height: auto;
+    background-color: #444f57;
+    margin: 1rem;
+    border: 2px solid #F2F0F0;
+    border-radius: 2%;
+    text-decoration: none;
+  }
+
+  .project-div h3 {
+    margin-top: 0;
+    text-decoration: none;
+    margin: auto;
+    color: #F2F0F0;
+    font-size: 1rem;
+  }
 }
 .ctc-div {
   width: 40%;
@@ -659,6 +688,12 @@ nav {
   align-items: flex-start;
   flex-wrap: wrap;
   color: #F2F0F0;
+  font-family: "Lato", sans-serif;
+}
+
+.input-divs {
+  width: 100%;
+  border-radius: 2%;
 }
 
 .contact-wrapper {
@@ -676,16 +711,6 @@ nav {
   padding: 2rem;
   border-radius: 1%;
   z-index: 0;
-}
-
-#name, #email, #subject, #message {
-  width: 100%;
-}
-
-.blog-page {
-  display: flex;
-  flex: row;
-  justify-content: center;
 }
 
 @media screen and (max-width: 780px) {

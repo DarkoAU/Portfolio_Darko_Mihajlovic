@@ -20,7 +20,13 @@
     align-items: flex-start;
     flex-wrap: wrap;
     color: $text-color;
+    font-family: $p-font;
 }
+
+.input-divs {
+        width: 100%;
+        border-radius: 2%;
+    }
 
 .contact-wrapper {
     display: flex;
@@ -39,15 +45,7 @@
     z-index: 0;
 }
 
-#name, #email, #subject, #message {
-    width: 100%;
-}
 
-.blog-page {
-    display: flex;
-    flex: row;
-    justify-content: center;
-}
 
 @media screen and (max-width: 780px) {
     
@@ -80,13 +78,13 @@
         border-radius: 10%;
         z-index: 20;
         width: 45%; 
-        background-color: #F2F0F0;
+        background-color: $text-color;
         opacity: 90%; 
     }
 
     .nav-bar a {
         font-size: 18px;
-        color: #444F57;
+        color: $nav-color;
         justify-content: center;
         text-align: center;
     }
